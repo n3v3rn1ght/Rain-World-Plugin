@@ -1,0 +1,65 @@
+name: MyPaperPlugin
+version: 1.0
+main: com.nevernight.RainWorldPlugin.MyPaperPlugin
+api-version: 1.21
+description: Пример плагина для управления временем таймера и другими функциями
+author: ВашеИмя
+commands:
+  endcycle:
+    description: Пропустить время таймера и установить 60 секунд
+    usage: /endcycle
+    permission: myplugin.command.endcycle
+    permission-message: У вас нет прав для использования этой команды.
+
+  newcycle:
+    description: Запустить новый таймер
+    usage: /newcycle
+    permission: myplugin.command.newcycle
+    permission-message: У вас нет прав для использования этой команды.
+  karmaup:
+    description: Поднять карму
+    usage: /newcycle
+    permission: myplugin.command.karmaup
+    permission-message: У вас нет прав для использования этой команды.
+  karmadown:
+    description: Опустить карму
+    usage: /newcycle
+    permission: myplugin.command.karmadown
+    permission-message: У вас нет прав для использования этой команды.
+
+  resetcycle:
+    description: Сбросить таймер
+    usage: /resetcycle
+    permission: myplugin.command.karmadown
+    permission-message: У вас нет прав для использования этой команды.
+
+  home:
+    description: Телепортироваться к кровати, на которой вы последний раз спали
+    usage: /home
+    permission: myplugin.command.home
+    permission-message: У вас нет прав для использования этой команды.
+
+permissions:
+  myplugin.command.endcycle:
+    description: Разрешает использование команды endcycle
+    default: op
+
+    myplugin.command.karmaup:
+    description: Разрешает использование команды endcycle
+    default: op
+
+    myplugin.command.karmadown:
+    description: Разрешает использование команды endcycle
+    default: op
+
+  myplugin.command.startcycle:
+    description: Разрешает использование команды startcycle
+    default: op
+
+  myplugin.command.resetcycle:
+    description: Разрешает использование команды resetcycle
+    default: op
+
+  myplugin.command.home:
+    description: Разрешает использование команды home
+    default: true
